@@ -1,11 +1,12 @@
-void main() {
-  var a = 1;
-  var b = 0;
-  var c = -1;
-  bool lebih_dari = a >= b;
+// ignore_for_file: dead_code
 
-  bool sama_dengan = a == a;
-  print(lebih_dari);
-  print(sama_dengan);
-  print(lebih_dari && sama_dengan);
+void main() {
+  print("and_dan");
+  bool a = true;
+  bool b = false;
+  print([a && a, a && b, b && a, b && b]);
+  print("\nor_atau");
+  print([a || a, a || b, b || a, b || b]);
+  print("\nnot_kebalikan");
+  print([!a, !b]);
 }
